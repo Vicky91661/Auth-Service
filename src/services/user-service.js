@@ -4,6 +4,7 @@ const status = require('http-status');
 const AppError =require('../utils/errors/app-error')
 async function createUser(data)
 {
+    console.log("inside service")
     try {
         console.log("inside Service");
         const user = await userRepository.create(data);
